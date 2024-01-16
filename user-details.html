@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User details</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Pixelify Sans', sans-serif;
+    }
+    body{
+        background-image: url("https://external-preview.redd.it/XaSCeX0XerglYNvUo0d5JBXaG-I4LjbT9XkuR8qVr6M.png?format=pjpg&auto=webp&s=0fb12d4bb1fa470ff1803d5ba4a1eca225ddff23");
+        background-size: 100%;
+    }
+    .container{
+        width: 800px;
+        margin: 20px auto;
+        display: flex;
+        height: 700px;
+    }
+    .main-block{
+        border: 1px solid #c00099;
+        backdrop-filter: blur(20px);
+        color: #10cfd9;
+        width: 800px;
+        height: 750px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(183, 180, 180, 0.5);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .main-block h1{
+        margin-top: -7px;
+    }
+    .block{
+        width: 700px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(22, 206, 218);
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    #postOf {
+        width: 90%;
+        height: 50px;
+        background-color: rgba(17, 216, 224, 0.96);
+        box-shadow: 0 0 20px rgba(15, 227, 236, 0.7);
+        border: none;
+        margin: 90px auto 0 auto ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .post-container{
+        width: 90%;
+        display: flex;
+        margin: 70px auto 10px auto;
+
+    }
+    .post-block{
+        color: #00c2ab;
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    .post{
+        backdrop-filter: blur(20px);
+        width: 19.2%;
+        height: 120px;
+        border-radius: 20px;
+        border: #1ed1e0 solid 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0 0 10px rgba(15, 227, 236, 0.5);
+    }
+    .post h3{
+        margin-top: 5px;
+
+    }
+    .post-block button{
+        width: 100%;
+        height: 40px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+        backdrop-filter: blur(20px);
+        background-color: rgba(30, 209, 224, 0.91);
+        color: #111111;
+        border: 1px solid #1ed1e0;
+        font-size: 25px;
+    }
+
+</style>
+<body>
+<div class="container">
+    <div class="main-block" id="main">
+
+    </div>
+</div>
+<button id="postOf">Post Of Current User</button>
+
+<div class="post-container">
+    <div class="post-block" id="postBlock">
+
+    </div>
+</div>
+
+
+
+
+<script src="Script/user-details-script.js"></script>
+</body>
+</html>
